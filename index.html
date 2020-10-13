@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Food Blog</title>
+        <meta name="description" content="I am a coder and learner. I am currently lerning Html, css, JS.">
+        <meta name="author" content="Ankita Bagale">
+        <meta name="theme-color" content="#A9A9A9">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="favicon3.icon" type="image/x-icon">
+    
+    </head>
+    
+    <body>
+        
+       <nav>
+            <div class="logo">
+                <img src="myLogo.jpg" alt="Logo" width="46" height="46">
+            </div>
+
+            <ul class="Nav-Links">
+                    <li>
+                        <a href="#About">About</a>
+                    </li>
+                    <li>
+                        <a href="#Menu">Food Menu</a>
+                    </li>
+                    <li>
+                        <a href="#Videos">Videos</a>
+                    </li>
+                    <li>
+                        <a href="#Reviews">Reviews</a>
+                    </li>  
+            </ul>
+                
+            <div>
+                    <form class="example" action="action_page.php">
+                    <input type="text" placeholder="Type to search" name="search">
+                    <button type="submit"><i class="fa fa-search"> </i></button>
+                    </form>
+            </div>
+
+            <div class="Burger">  
+                <div class="line1"> </div>
+                <div class="line2"> </div>
+                <div class="line3"> </div>
+            </div>
+            
+        </nav>
+
+
+        <div class="carousel-textbody center-xy" 
+            <h2 class="text-body">Image SlideShow</h2>
+            <p class="text-body">Click on Autoplay on to autoplay the slideshow.<br>
+            Click on Autoplay off to turn off autoplay.</p>
+            <div class="center-xy">
+                <button class="autoplayButton autoplayOn" onclick="autoplayOn()">Autoplay ON</button>
+                <button class="autoplayButton autoplayOff" onclick="autoplayOff()">Autoplay OFF</button>
+            </div>
+
+            <div class="carousel">
+            
+                <div class="mySlides fade">
+                    <div class="slide1">
+                        <img src="imag1.jpeg" style="width: 100%;" alt="image1">
+                        <div class="noOfSlide">1/3</div>
+                    </div>  
+                </div>  
+                <div class="mySlides fade">
+                    <div class="slide2">
+                        <img src="imag1.jpeg" style="width: 100%;" alt="image1">
+                        <div class="noOfSlide">2/3</div>
+                    </div>  
+                </div> 
+                <div class="mySlides fade">
+                    <div class="slide2">
+                        <img src="imag1.jpeg" style="width: 100%;" alt="image1">
+                        <div class="noOfSlide">3/3</div>
+                    </div>  
+                </div> 
+
+                <a class="arrow right" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="arrow left" onclick="plusSlides(1)">&#10095;</a>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div> 
+
+            </div>
+        </div>
+        <div class="text-body">
+            <p>
+                What is Lorem Ipsum?
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                It has survived not only five centuries, but also the leap into electronic typesetting, 
+                remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+                sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+                Aldus PageMaker including versions of Lorem Ipsum. <br>
+                What is Lorem Ipsum?
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                It has survived not only five centuries, but also the leap into electronic typesetting, 
+                remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+                sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+                Aldus PageMaker including versions of Lorem Ipsum.<br>
+                What is Lorem Ipsum?
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                It has survived not only five centuries, but also the leap into electronic typesetting, 
+                remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+                sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+                Aldus PageMaker including versions of Lorem Ipsum.<br>
+                What is Lorem Ipsum?
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                It has survived not only five centuries, but also the leap into electronic typesetting, 
+                remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+                sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+                Aldus PageMaker including versions of Lorem Ipsum.
+                <br>
+                What is Lorem Ipsum?
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                It has survived not only five centuries, but also the leap into electronic typesetting, 
+                remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+                sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+                Aldus PageMaker including versions of Lorem Ipsum.<br>
+                What is Lorem Ipsum?
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                It has survived not only five centuries, but also the leap into electronic typesetting, 
+                remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+                sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+                Aldus PageMaker including versions of Lorem Ipsum.<br>
+                What is Lorem Ipsum?
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                It has survived not only five centuries, but also the leap into electronic typesetting, 
+                remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+                sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+                Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+        </div>
+
+        <!-- footer -->
+        <div class="goToTopCTA"><a href="#" target="_Top">Go to Top</a></div>
+
+        <footer id="footer-page" class="contact">
+                <div class="contact-ankita">
+                    <h3 class="title-of-footer">~This is footer Area~</h3>
+                    <ul class="list-contacts">
+                        <li><h3 class="label">Email Address:</h3> 
+                            <h4 class="contact-id">manali.bagale@gmail.com</h4> 
+                        </li>
+                        <li><h3 class="label">Instagram:</h3> 
+                            <h4 class="contact-id">ankitabagale</h4>  
+                        </li>
+                        <li><h3 class="label">Linked in:</h3> 
+                            <h4 class="contact-id">www.linkedin.com/in/ankita-bagale1108</h4>  
+                        </li>
+                        <li><h3 class="label">Author:</h3> 
+                            <h4 class="contact-id">Ankita Bagale</h4>  
+                        </li>
+                    </ul>
+                </div>
+    
+        </footer>
+
+            <script src="app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,343 @@
+*{
+    margin: 0;   
+    box-sizing: border-box; 
+    /* overflow-x: hidden; */
+ font-family: 'Open Sans', sans-serif;  
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+a{
+   text-decoration: none;
+   text-decoration-style: none;
+}
+li {
+    list-style-type: none;
+}
+.logo img{
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 8vh;
+    position: fixed;
+    top:0px;
+    width: 100%;
+    background-color: black;
+    border-top:2px solid beige;
+    border-bottom:2px solid beige;
+    opacity: 100%;
+    z-index: 100;
+    
+}
+
+
+.Nav-Links{
+display: flex;
+justify-content: space-around;
+width: 50%;
+align-items: center;
+}
+
+.Nav-Links li{
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right:4px ;
+}
+
+.Nav-Links a:link, .Nav-Links a:visited {
+    text-decoration: none;
+    color: white;
+}
+.Nav-Links a:hover, .Nav-Links a:active{
+    color: white;
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    padding-bottom: 2px;
+}
+
+.Burger div{
+    height: 3px;
+    width: 25px;
+    background-color: white;  
+    margin:4px;
+}
+.Burger {
+    display: none;
+}
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 14px;
+    float: left;
+    color: black;
+    width: 55%;
+    height: 40px;
+    border: none;
+    background: #f1f1f1;
+  }
+
+  form.example input[type=text]::placeholder{
+      color:rgb(114, 113, 113);
+  }
+  form.example input[type=text]:focus {
+    background-color: rgb(224, 219, 219);
+  }
+  
+  /* Style the submit button */
+  form.example button {
+    float: left;
+    width: 20%;
+    height: 40px;
+    padding: 2px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    border: 1px solid #f1f1f1;; /* Prevent borders */
+    cursor: pointer;
+  }
+
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .mainBody{
+  margin: 0 50px 0 50px;   
+  }
+  .center-xy{
+      text-align: center;
+  }
+  .carousel-textbody{
+      margin-top: 80px;
+  }
+  .autoplayButton{
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+    border: none;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(26, 223, 26,0.8);
+    padding: 10px;
+    font-size: 16px;
+    height: 50px;    
+    cursor: pointer;
+  }
+  .autoplayButton:hover{
+      border: 2px solid white;
+  }
+  .autoplayOn{
+    margin-right: 20px;
+    background-color: rgb(245, 53, 53, 0.8);
+  }
+
+  .carousel{
+      position: relative;
+      max-width: 1000px;
+      margin: auto;
+      
+  }
+  .arrow{
+      font-size: 40px;
+      position: absolute;
+      top:45%;
+    cursor: pointer;
+    padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  background-color:rgb(0, 0, 0,0.5);
+  }
+  .right{
+      left:0px;
+  }
+  .left{
+ right: 0px;
+  }
+  /* .slide2, .slide3{
+ display: none;
+  } */
+  .noOfSlide{
+      position: absolute;
+      top: 10px;
+      left:10px;
+      font-weight: bolder;
+      font-size: 18px;
+  }
+
+  .carousel a:hover{
+    background-color:rgb(0, 0, 0,0.8);
+  }
+  .dot{
+    background-color: transparent;
+    border: 2px solid white;
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active, .dot:hover {
+    background-color:white;
+  }
+  
+  /* Fading animation */
+ .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  .contact{
+    min-height: 150px;
+    background-color:rgb(255, 255, 255,0.2);
+}
+.contact-ankita{
+    
+    padding: 40px 0px;
+}
+.list-contacts{
+    display: flex;
+    width:100%;
+    justify-content: space-around;
+    list-style-type: none;
+    
+}
+.label{
+    font-size: 16px;
+}
+.contact-id{
+    font-size: 14px;
+}
+.title-of-footer{
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 30px;
+   
+}
+
+.goToTopCTA a {
+background-color: rgb(255, 255, 255,0.2);
+text-decoration: none;
+color: white;
+display: inline-block;
+padding: 10px;
+font-size: 16px;
+}
+.goToTopCTA a:hover{
+   border: 2px solid white;
+   padding: 8px;
+   background-color: black;
+}
+.goToTopCTA{
+text-align: center;
+margin-top: 40px;
+margin-bottom: 40px;
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+@media screen and (max-width:1024px){
+    .Nav-Links{
+    width: 60%;
+    }
+}
+
+@media screen and (max-width:768px){
+    
+    body{
+        margin: 0;
+        }
+    .text-body{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .Nav-Links{
+        position: absolute;
+        right: -2px;
+        height: 50vh;
+        top: 7.8vh;
+        padding: 0px;
+        width:50%;
+        background-color: beige;
+        display: flex;
+        flex-direction: column;
+        transform: translateX(100%);
+
+    }
+    .Nav-Links li{
+        opacity: 0;
+    }
+    .Nav-Active{
+        transform: translateX(0%);
+    }
+    @keyframes navLinksFade {
+        from{ opacity: 0;
+        transform: translateX(50%);}
+        to { opacity: 1;
+        transform: translateX(0%);
+        }
+    }
+    .Nav-Links a{
+        color:black !important;
+    }
+    
+    .Burger{
+        display: block;
+    }
+    
+    .toggle .line1{
+        transform: rotate(-45deg) translate(-5px, 5px);
+    }
+    .toggle .line2{
+       opacity: 0;
+    }
+    .toggle .line3{
+        transform: rotate(45deg) translate(-5px, -5px);;
+    }
+
+    .arrow{
+        font-size: 20px;
+        position: absolute;
+        top:35%; 
+    }
+
+    
+    .list-contacts{
+            display: flex;
+            flex-direction: column;
+            margin: 0px;
+            padding: 15px 20px;
+            text-align: center;
+        }
+    .list-contacts h4{
+            margin-bottom: 20px;
+        }
+    .contact-ankita{
+        
+            padding: 0px 0px;
+        }
+    .title-of-footer{
+            text-align: center;
+            padding: 35px 20px 10px 20px;
+           
+        }
+    
+}
+
+
