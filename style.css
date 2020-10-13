@@ -35,8 +35,8 @@ nav {
     top:0px;
     width: 100%;
     background-color: black;
-    border-top:2px solid beige;
-    border-bottom:2px solid beige;
+    border-top:2px solid white;
+    border-bottom:2px solid white;
     opacity: 100%;
     z-index: 100;
     
@@ -280,7 +280,7 @@ margin-bottom: 40px;
         top: 8vh;
         padding: 0px;
         width:50%;
-        background-color: beige;
+        background-color: white;
         display: flex;
         flex-direction: column;
         transform: translateX(100%);
