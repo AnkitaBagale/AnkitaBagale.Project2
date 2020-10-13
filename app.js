@@ -60,7 +60,7 @@ const navSlide = () =>{
                 link.style.animation='';
             }
             else{
-            link.style.animation=`navLinksFade 0.5s ease forwards ${index*100+200}ms`;
+            link.style.animation=`navLinksFade 0.5s ease forwards ${index*100+400}ms`;
             }
         })
         burger.classList.toggle('toggle');
