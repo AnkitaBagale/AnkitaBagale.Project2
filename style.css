@@ -17,6 +17,8 @@ a{
 li {
     list-style-type: none;
 }
+
+/* Styling for navigation header */
 .logo img{
     margin: 0;
     padding: 0;
@@ -41,7 +43,6 @@ nav {
     z-index: 100;
     
 }
-
 
 .Nav-Links{
 display: flex;
@@ -76,6 +77,7 @@ align-items: center;
 .Burger {
     display: none;
 }
+/* styling for search-box */
 form.example input[type=text] {
     padding: 10px;
     font-size: 14px;
@@ -113,13 +115,14 @@ form.example input[type=text] {
     clear: both;
     display: table;
   }
-
+/* styling for main body */
   .mainBody{
   margin: 0 50px 0 50px;   
   }
   .center-xy{
       text-align: center;
   }
+  /* styling for carousel */
   .carousel-textbody{
       margin-top: 80px;
   }
@@ -152,6 +155,9 @@ form.example input[type=text] {
       position: relative;
       max-width: 1000px;
       margin: auto;
+      border-top: 5px solid white;
+      border-bottom: 5px solid white;
+      background-color: #444;
       
   }
   .arrow{
@@ -169,11 +175,9 @@ form.example input[type=text] {
       left:0px;
   }
   .left{
- right: 0px;
+    right: 0px;
   }
-  /* .slide2, .slide3{
- display: none;
-  } */
+  
   .noOfSlide{
       position: absolute;
       top: 10px;
@@ -199,71 +203,88 @@ form.example input[type=text] {
     background-color:white;
   }
   
-  /* Fading animation */
+  /* Fading animation for carousel slides */
  .fade {
     animation-name: fade;
     animation-duration: 1.5s;
   }
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
 
-  .contact{
+  /* styling for footer */
+    .contact{
     min-height: 150px;
-    background-color:rgb(255, 255, 255,0.2);
-}
-.contact-ankita{
-    
-    padding: 40px 0px;
-}
-.list-contacts{
-    display: flex;
-    width:100%;
-    justify-content: space-around;
-    list-style-type: none;
-    
-}
-.label{
-    font-size: 16px;
-}
-.contact-id{
-    font-size: 14px;
-}
-.title-of-footer{
+    background-color: #444;
+    }
+
+    .title-of-footer{
     font-size: 18px;
     text-align: center;
     padding-bottom: 30px;
-   
-}
+    padding-top: 30px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    }
 
+    .list-contacts{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        padding: 0px;
+        padding-bottom: 50px;
+        padding-top: 50px;
+        border-bottom: 10px solid white;
+        margin-bottom: 1px;
+    }
+    .social-icons{
+        background-color: white;
+        font-size: 24px;
+        border:none;
+        color: #444;
+        border-radius: 50%;
+    }
+
+    .list-contacts a:hover{
+        background-color: black;
+        color: white;
+    }
+
+
+ /* styling for go to top CTA */
 .goToTopCTA a {
-background-color: rgb(255, 255, 255,0.2);
-text-decoration: none;
-color: white;
-display: inline-block;
-padding: 10px;
-font-size: 16px;
+    background-color:#444;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 25px;
 }
-.goToTopCTA a:hover{
+.goToTopCTA a:hover, a:active{
    border: 2px solid white;
-   padding: 8px;
-   background-color: black;
+   padding: 10px 25px;
 }
 .goToTopCTA{
 text-align: center;
 margin-top: 40px;
 margin-bottom: 40px;
 }
-  
-@keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
+ 
 
-
+/* styling for navigation header in Medium device view */
 @media screen and (max-width:1024px){
     .Nav-Links{
     width: 60%;
     }
 }
 
+
+/* styling for small device */
 @media screen and (max-width:768px){
     
     body{
@@ -273,6 +294,7 @@ margin-bottom: 40px;
         margin-left: 20px;
         margin-right: 20px;
     }
+    /* styling for navigation header in small device*/
     .Nav-Links{
         position: absolute;
         right: 0px;
@@ -317,37 +339,18 @@ margin-bottom: 40px;
         transform: rotate(45deg) translate(-5px, -5px);;
     }
 
+    /* styling for search box in small device */
     .example{
        position: relative;
        left: 30px; 
     }
-
+    /* styling for carousel  arrow in small device */
     .arrow{
         font-size: 20px;
         position: absolute;
         top:35%; 
     }
 
-    
-    .list-contacts{
-            display: flex;
-            flex-direction: column;
-            margin: 0px;
-            padding: 15px 20px;
-            text-align: center;
-        }
-    .list-contacts h4{
-            margin-bottom: 20px;
-        }
-    .contact-ankita{
-        
-            padding: 0px 0px;
-        }
-    .title-of-footer{
-            text-align: center;
-            padding: 35px 20px 10px 20px;
-           
-        }
     
 }
 
