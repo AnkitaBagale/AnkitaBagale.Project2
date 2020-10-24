@@ -123,5 +123,11 @@ float: right;
         display: block;
         height: 300px;
     }
+    .textSection h3{
+        font-size: 22px;
+    }
+    .textSection p{
+        font-size: 16px;
+    }
 
 }
