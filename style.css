@@ -1,3 +1,4 @@
+/* index.html Css */
 *{
     margin: 0;   
     box-sizing: border-box; 
@@ -6,7 +7,7 @@
 }
 
 body{
-    background-color: black;
+    background-color: rgba(36, 41, 67,0.93);
     color: white;
 }
 
@@ -23,6 +24,12 @@ li {
     margin: 0;
     padding: 0;
 }
+.logo a:link, .logo a:visited, .logo a:hover, .logo a:active{
+    text-decoration: none;
+    text-decoration-style: none;
+    border: none;
+    padding: 0px;
+}
 .logo{
     position: relative;
     top: 2px;
@@ -36,7 +43,7 @@ nav {
     position: fixed;
     top:0px;
     width: 100%;
-    background-color: black;
+    background-color: rgba(36, 41, 67);
     border-top:2px solid white;
     border-bottom:2px solid white;
     opacity: 100%;
@@ -54,18 +61,22 @@ align-items: center;
 .Nav-Links li{
     padding-top: 4px;
     padding-bottom: 4px;
-    padding-right:4px ;
+    /* padding-right:4px ; */
+}
+.Nav-Links a{
+    color: white;
 }
 
-.Nav-Links a:link, .Nav-Links a:visited {
+.Nav-Links a:link, .Nav-Links a:visited{
     text-decoration: none;
     color: white;
 }
+
 .Nav-Links a:hover, .Nav-Links a:active{
     color: white;
     border-style: solid;
     border-width: 0px 0px 2px 0px;
-    padding-bottom: 2px;
+    padding: 0 0 2px 0;
 }
 
 .Burger div{
@@ -96,13 +107,13 @@ form.example input[type=text] {
     background-color: rgb(224, 219, 219);
   }
   
-  /* Style the submit button */
+  /* Style the submit search icon/button */
   form.example button {
     float: left;
     width: 20%;
     height: 40px;
     padding: 2px;
-    background-color: black;
+    background-color: rgba(36, 41, 67);
     color: white;
     font-size: 18px;
     border: 1px solid #f1f1f1;; /* Prevent borders */
@@ -153,12 +164,13 @@ form.example input[type=text] {
 
   .carousel{
       position: relative;
-      max-width: 1000px;
+      width: 100%;
+      height: 500px;
+      overflow: hidden;
       margin: auto;
       border-top: 5px solid white;
       border-bottom: 5px solid white;
-      background-color: #444;
-      
+      overflow-y: hidden;   
   }
   .arrow{
       font-size: 40px;
@@ -189,12 +201,18 @@ form.example input[type=text] {
   .carousel a:hover{
     background-color:rgb(0, 0, 0,0.8);
   }
+  .dotsCarousel{
+    position: absolute; 
+    bottom: 5px; 
+    margin: 0 auto; 
+    width: 100%;
+  }
   .dot{
     background-color: transparent;
     border: 2px solid white;
     width: 15px;
     height: 15px;
-    margin: 5px;
+    margin: 10px 15px;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
@@ -216,7 +234,7 @@ form.example input[type=text] {
   /* styling for footer */
     .contact{
     min-height: 150px;
-    background-color: #444;
+    background-color: rgba(36, 41, 67);
     }
 
     .title-of-footer{
@@ -241,33 +259,32 @@ form.example input[type=text] {
         margin-bottom: 1px;
     }
     .social-icons{
-        background-color: white;
         font-size: 24px;
         border:none;
-        color: #444;
+        background-color: white;
+        color: rgba(36, 41, 67);
         border-radius: 50%;
     }
 
     .list-contacts a:hover{
-        background-color: black;
-        color: white;
+        background-color:#9bf1ff;
     }
 
 
  /* styling for go to top CTA */
 .goToTopCTA a {
-    background-color:#444;
+    background-color: rgba(36, 41, 67);
     text-decoration: none;
     color: white;
     display: inline-block;
     font-size: 16px;
-    border: none;
+    border: 2px solid white;
     border-radius: 25px;
     padding: 12px 25px;
 }
-.goToTopCTA a:hover, a:active{
-   border: 2px solid white;
-   padding: 10px 25px;
+.goToTopCTA a:hover, .goToTopCTA a:active{
+   color: #9bf1ff;
+   border:2px solid #9bf1ff;
 }
 .goToTopCTA{
 text-align: center;
@@ -345,12 +362,22 @@ margin-bottom: 40px;
        left: 30px; 
     }
     /* styling for carousel  arrow in small device */
+    .carousel{
+        height: 240px;
+    }
     .arrow{
         font-size: 20px;
         position: absolute;
         top:35%; 
     }
-
+    .dotsCarousel{
+        bottom: 0px; 
+        margin: 0 auto; 
+        width: 100%;
+      }
+     .dot{
+         margin: 8px;
+     } 
     
 }
 
