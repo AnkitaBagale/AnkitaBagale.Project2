@@ -1,7 +1,7 @@
 
 function postComment(data){
     var html='<div class="postedReviews"><p>'+data.content+'</p><h4>'+data.name+'</h4></div>';
-    $('#container').append(html);
+    $('#container').prepend(html);
 }
      
 
