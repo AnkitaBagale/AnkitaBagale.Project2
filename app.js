@@ -1,6 +1,6 @@
 
-var slideNo = 1;
-var flag;
+let slideNo = 1;
+let flag;
 
 displaySlide(slideNo);
 
@@ -28,8 +28,8 @@ function currentSlide(n) {
 
 function displaySlide(n){
 
-    let slides=document.getElementsByClassName("mySlides");
-    let dots= document.getElementsByClassName("dot");
+    const slides=document.getElementsByClassName("mySlides");
+    const dots= document.getElementsByClassName("dot");
 
     if(n>slides.length){
         slideNo=1;
