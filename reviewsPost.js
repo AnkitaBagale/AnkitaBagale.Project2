@@ -1,25 +1,25 @@
 
 function postComment(data){
-    var html='<div class="postedReviews"><p>'+data.content+'</p><h4>'+data.name+'</h4></div>';
+    const html='<div class="postedReviews"><p>'+data.content+'</p><h4>'+data.name+'</h4></div>';
     $('#container').prepend(html);
 }
      
 
-var commentAll=[
+const commentAll=[
     {"name":"Ankita Bagale", "content": "This is comment 1"},
     {"name":"Atharva Bagale", "content": "This is comment 2"}
     ];
-for(var i=0; i<commentAll.length;i++){
+for(let i=0; i<commentAll.length;i++){
    postComment(commentAll[i]);  
     }
 
 
    function checkFields(){
                 //checking the fields are filled or not
-                    var name=document.querySelector('input[id="name"]');
-                    var comment=document.querySelector('textarea[id="comment"]')
-                    var message=document.querySelectorAll(".errorMessage");
-                    var element=document.querySelector(".postedReviews");
+                    const name=document.querySelector('input[id="name"]');
+                    const comment=document.querySelector('textarea[id="comment"]')
+                    const message=document.querySelectorAll(".errorMessage");
+                    const element=document.querySelector(".postedReviews");
                 
                     name.addEventListener('invalid', function(event){
                         if(event.target.validity.valueMissing){
@@ -48,7 +48,7 @@ for(var i=0; i<commentAll.length;i++){
                     })
 
                     if(name.value && comment.value){
-                        var addObj={ "name": name.value, "content": comment.value};
+                        const addObj={ "name": name.value, "content": comment.value};
                         commentAll.push(addObj);
                         postComment(addObj);
                     }
