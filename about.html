@@ -104,12 +104,12 @@
             <script>
                 let bgColor= "";
                 function mouseOver(i){
-                    sectionArea=document.querySelectorAll(".textSection");
+                    const sectionArea=document.querySelectorAll(".textSection");
                     bgColor=sectionArea[i].style.backgroundColor;
                     sectionArea[i].style.backgroundColor="transparent";
                  }
                 function mouseOut(i){
-                    sectionArea=document.querySelectorAll(".textSection");
+                    const sectionArea=document.querySelectorAll(".textSection");
                     sectionArea[i].style.backgroundColor=bgColor;
                  }
             </script>
